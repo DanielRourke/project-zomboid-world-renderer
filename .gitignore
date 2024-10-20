@@ -1,0 +1,7 @@
+*.pyc
+.DS_Store
+*.config
+output/
+*\__pycache__
+\output
+\configs

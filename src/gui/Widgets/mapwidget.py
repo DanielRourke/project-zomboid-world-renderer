@@ -80,6 +80,9 @@ class MapWidget(QWidget):
         self._map = Map(self.width(), self.height(), fname, self._config)
         self.update()
 
+    def getMap(self):
+        return self._map
+
     def saveImage(self, max_dim, fname):
         """
         """
@@ -136,4 +139,4 @@ class MapWidget(QWidget):
         text = 'Load an OSM file to begin!'
         fm = p.fontMetrics()
         w, h = fm.width(text), fm.height()
-        p.drawText(self.width()/2-w/2, self.height()/2+h/2, text)
+        p.drawText(int(self.width()/2-w/2), int(self.height()/2+h/2), text)
