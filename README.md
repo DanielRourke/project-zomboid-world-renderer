@@ -35,6 +35,21 @@ GUI written in Python to parse OSM (OpenStreetMap) files and render them onscree
   <li>Finally, in the configuration.py file, connect the CONFIG_STYLE to a QPen (for a layer to be rendered as a line) or QColor (for a layer to be rendered as a fill)</li>
 </ol>
 
+### TODO
+-Convert config to use a set of rules json like object from pz for colour
+-styles config should be keep much the same but set as alias
+-need filters can encompas multiple tags in the same style
+-style should have a layer
+-create ui to create rules with alias
+-create a subset tester
+
+{
+  "" {
+    layer:
+    filters:
+    rule:
+  }
+}
 
 
 ### Contributing
